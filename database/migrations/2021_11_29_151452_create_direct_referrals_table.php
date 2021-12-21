@@ -23,7 +23,7 @@ class CreateDirectReferralsTable extends Migration
             $table->integer('weekInYear');
             $table->bigInteger('referrer_package_id')->unsigned()->nullable();
             $table->bigInteger('referree_package_id')->unsigned()->nullable();
-            $table->integer('user_wallet_id')->nullable();
+            $table->bigInteger('user_wallet_id')->unsigned()->nullable();
             $table->integer('referrer_bonus')->nullable();
             $table->integer('referral_points')->nullable();
 
