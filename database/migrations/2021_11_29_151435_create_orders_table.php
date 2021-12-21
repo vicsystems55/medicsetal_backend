@@ -24,7 +24,7 @@ class CreateOrdersTable extends Migration
             $table->bigInteger('user_id')->unsigned()->unique();
             $table->bigInteger('package_id')->unsigned();
 
-            $table->foreign('package_id')->references('id')->on('phoenix_packages');
+            $table->foreign('package_id')->references('id')->on('packages');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

@@ -20,7 +20,7 @@ class PhoenixgnPackagesSeeder extends Seeder
             [  
 
                 
-                'reg_fee' => '750000',
+                'reg_fee' => '25000',
                 'grade' => 6,
                 'points' => '600',
                 'dr_commission' => '45000',
